@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&subset=latin-ext');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -50,51 +53,41 @@ table {
   box-sizing: border-box;
 }
 /* reset.css close */
-/*============================*/
-
+/*========================================================================*/
 /*===============DEFAULT CSS=============================================*/
-/*========================================================================*/
-/*========================================================================*/
 /*========================================================================*/
  body{
     position: relative;
-  }
-  hr {
-    color: #D6DBDF  ;
-    margin-right:90px;
-    opacity: 0.4;
-  }
-  p{
-    line-height: 29px;
-    font-size: 18px;
-    text-align:justify;
-    color: #808B96;
-  }
-  i {
-    color: #28B463;
-    border:1px solid #D4EFDF;
-    background-color: #D4EFDF;
-  }
-  /*===========#D4EFDF=================*/
-
+}
+hr {
+  color: #D6DBDF  ;
+  margin-right:90px;
+  opacity: 0.4;
+}
+p{
+  line-height: 29px;
+  font-size: 18px;
+  text-align:justify;
+  color: #808B96;
+}
+i{
+  color: #28B463;
+  border:1px solid #D4EFDF;
+  background-color: #D4EFDF;
+}
   /*header.css*/
-  .vd {
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 100% 100%;
-    display: flex;
-    /*background-repeat:no-repeat;*/
-    height:200px;
-    width:100%;
-    margin:0px;
-  }
-  header { width:75%;
-    height:200px;
-    /*background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 100% 100%;
-    /*background-repeat:no-repeat;
-    height:200px;
-    margin:0px;*/
-  }
+.vd {
+  background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  height:200px;
+  width:100%;
+  margin:0px;
+}
+header{
+  width:75%;
+  height:200px;
+}
   header img {
     width: 100px;
     height: 100px;
@@ -136,70 +129,44 @@ table {
     margin-top:0px;
     opacity: 0.4;
   }
-  .design-archives{
-
-    border: 1px solid #BDC3C7  ;
-    background-color: #EAECEE  ;
+  .right-arrow {
+    background: url(right-arrow.png);
+    background-size: cover;
+    width: 43px;
+    height: 50px;
+    border: 1px solid #54a095;
     text-align: center;
-    height:50px;
-    padding-top: 15px;
-    color:#515A5A;
+    background-color: #54a095;
+    color: #a5b5b5;
+    background-color: #EAECEE;
+    color: #515A5A;
   }
-
-
-  /*.indicator{
-    margin-left: 91%;
-    color:#EAECEE  ;
-    position: relative;
-    top:-90px;
-
-  }*/
-  .indicator i{
-    background-color: #EAECEE  ;
-    color:#515A5A;
-    opacity:0.3;
-  }
-  /*============================
-
-  /*content.css*/
-  /*.content-wrapper{
-    position: relative;
-  }*/
-  #zen-intro {
-    background: #888;
-    float:left;
-    width:75%;
-  }
+/*content*/
+.first-para{
+  background: white;
+  padding-left: 140px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-family: 'PT Serif', serif;
+}
   .first-para p a{
-    text-transform: uppercase;
-     font-family: 'Source Code Pro', monospace;
-     color: #27AE60;
-     text-decoration:none;
+  text-transform: uppercase;
+   font-family: 'Source Code Pro', monospace;
+   color: #27AE60;
+   text-decoration:none;
   }
-  .first-para{
-    background: white;
-    padding-left: 140px;
-    padding-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    /*height:750px;*/
-    font-family: 'PT Serif', serif;
-
-  }
-  .second-para{
-    display:block;
-    background: #A9DFBF ;
-    background-image:  url(http://www.csszengarden.com/214/bamboo.png);
-    padding-left: 140px;
-    padding-right: 420px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    /*height:600px;*/
-    font-family: 'PT Serif', serif;
-    margin-right: -33.5%;
-    /*background-blend-mode: lighten;*/
-
-  }
+.second-para{
+  display:block;
+  background: #A9DFBF ;
+  background-image:  url(http://www.csszengarden.com/214/bamboo.png);
+  padding-left: 140px;
+  padding-right: 420px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-family: 'PT Serif', serif;
+  margin-right: -33.5%;
+}
 
   .second-para a{
     font-family: 'Source Code Pro', monospace;
@@ -214,15 +181,13 @@ table {
   .second-para p{
     color: #40AB5F   ;
   }
-  .third-para{
-    background:white;
-    padding-left: 140px;
-    padding-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    /*height:600px;*/
-    width: 100%
-  }
+.third-para{
+  background:white;
+  padding-left: 140px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
   .third-para a{
     font-family: 'Source Code Pro', monospace;
      color:#0CAEEA;
@@ -232,47 +197,45 @@ table {
   /*============================*/
 
   /*sidebar.css*/
-  aside {
-    float:right;
-    width:25%;
-    position: absolute;
-    top:0px;
-    bottom: 300px;
-    right:0px;
-    background: #95A5A6 ;
-  }
-  .viewdesign {
-    border: 1px solid black;
-      width: 250px;
-      padding: 15px;
-      text-align: center;
+aside {
+  float:right;
+  width:25%;
+  position: absolute;
+  top:0px;
+  bottom: 300px;
+  right:0px;
+  background: #95A5A6 ;
+}
+.viewdesign {
+  border: 1px solid black;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
   margin-top: 70px;
   margin-left: 50px;
-
-  }
-  .sidebar {
-    background: #95A5A6 ;
-    /*height: 2150px;*/
-    opacity: 0.4;
-    margin-top:200px;
-    /*position: absolute;
-    top:0px;
-    bottom: 0px;
-    right:0px;*/
-  }
+}
+.sidebar {
+  background: #95A5A6 ;
+  opacity: 0.4;
+  margin-top:200px;
+}
+.design-archives{
+  border: 1px solid #BDC3C7  ;
+  background-color: #EAECEE  ;
+  text-align: center;
+  height:50px;
+  padding-top: 15px;
+  color:#515A5A;
+}
   .design-selection ul  {
     display: flex;
     flex-direction: column;
     margin-top:100px;
     text-align: left;
     padding-left: 60px;
-    /*align-items: center;*/
-    /*justify-content: center;*/
   }
   .design-selection ul  li{
     margin-top: 18px;
-
-    /*padding-bottom: 4px;*/
   }
   .design-selection ul  li a {
     color: #003300;
@@ -281,13 +244,17 @@ table {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
     font-size: 16px;
-
   }
   .design-selection ul  li a:nth-child(3n) {
     color: #000000;
     text-transform:none;
     font-weight: bold;
   }
+#zen-intro {
+  background: #888;
+  float:left;
+  width:75%;
+}
   .zen-resources ul{
     display: flex;
     flex-direction: column;
@@ -305,21 +272,16 @@ table {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
     font-size: 16px;
-
   }
-
-  /*============================*/
-
-
   /*footer.css*/
-  .footer-text {
-    clear:both;
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 100% 100%;
-    background-repeat:no-repeat;
-    height:200px;
-    margin:0px;
-  }
+.footer-text {
+  clear:both;
+  background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  height:200px;
+  margin:0px;
+}
   .footer-text p{
     text-align: center;
     padding-top: 60px;
@@ -329,52 +291,43 @@ table {
   }
   .footer-text a{
     color: #fff;
-    /*font-weight: 40px;*/
-  font-style: normal;
-  text-decoration: none;
+    font-style: normal;
+    text-decoration: none;
   }
-  .footer-icons
-  {
-    background: #0B5345;
-    height:100px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: row;
-  }
+.footer-icons{
+  background: #0B5345;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: row;
+}
   .footer-icons ul{
     display: flex;
     align-items: center;
     justify-content:center;
     flex-direction: row;
-
   }
   .footer-icons ul li {
     padding-left:20px;
     padding-right: 90px;
   }
-  .circle {
-    width: 60px;
-    height: 60px;
+.circle {
+  width: 60px;
+  height: 60px;
   padding:13px;
   border: 1px solid #BDC3C7  ;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    border:1px solid white;
-    background-color:transparent;
-  }
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border:1px solid white;
+  background-color:transparent;
+}
   .fa-ul i{
     color:white;
   }
 /*========================================================================*/
 /*========================================================================*/
-/*========================================================================*/
-/*========================================================================*/
-/*========================================================================*/
-
-
-
 /*==================mobile css====================*/
 @media screen and (min-width: 320px)
 {
@@ -404,36 +357,36 @@ table {
     margin: 0px;
     display: block;
     height:auto;
-}
-header {
+  }
+  header {
     width: 100%;
     height: auto;
-}
-  header img {
-    width: 81px;
-    height: 80px;
-    margin-left: 18px;
-    margin-top: 13px;
-}
-header h1 {
-    position: absolute;
-    top: 35px;
-    left: 110px;
-    color: white;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-family: 'Source Code Pro', monospace;
-}
-header h2 {
-    position: absolute;
-    top: 64px;
-    left: 114px;
-    color: #BDC3C7;
-    font-size: 12px;
-}
-.hside {
+  }
+    header img {
+      width: 81px;
+      height: 80px;
+      margin-left: 18px;
+      margin-top: 13px;
+    }
+    header h1 {
+      position: absolute;
+      top: 35px;
+      left: 110px;
+      color: white;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: 'Source Code Pro', monospace;
+    }
+    header h2 {
+      position: absolute;
+      top: 64px;
+      left: 114px;
+      color: #BDC3C7;
+      font-size: 12px;
+    }
+  .hside {
     width: 100%;
-    background: #95A5A6;
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,160 +394,103 @@ header h2 {
     opacity: 0.4;
     margin-top: 20px;
     height: auto;
-}
-.design-archives {
+  }
+  h3{
+  font-size: 20px;
+  }
+  .design-archives {
     border: 1px solid #BDC3C7;
     text-align: center;
     height: 50px;
     padding: 15px;
     color: #515A5A;
     font-size: 22;
-}
-.design-selection ul {
-    display: flex;
-    flex-direction: column;
-     margin-top:0px;
-    text-align: left;
-    padding-left: 60px;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-.sidebar {
-     margin-top:0px;
-}
-.zen-resources ul {
-  margin-top:0px;
-  margin-bottom: 20px;
-}
-.footer-text p {
-    text-align: center;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    font-size: 16px;
-     word-spacing:normal;
-}
-.footer-text {
-  height:auto;
-}
-.footer-icons ul li {
-     padding-left: 0px;
-     padding-right: 0px;
-}
-.footer-icons ul {
-  margin-left: 0px;
-}
-}
+  }
+    .design-selection ul {
+      display: flex;
+      flex-direction: column;
+       margin-top:0px;
+      text-align: left;
+      padding-left: 60px;
+    }
+  .sidebar {
+       margin-top:0px;
+  }
+  .zen-resources ul {
+    margin-top:0px;
+    margin-bottom: 20px;
+  }
+  .footer-text p {
+      text-align: center;
+      padding-top: 19px;
+      padding-bottom: 19px;
+      font-size: 28px;
+       word-spacing:normal;
+  }
+  .footer-text {
+    height:auto;
+  }
+  .footer-icons ul li {
+       padding-left: 9px;
+      padding-right: 6px;
+      margin-left: -2px;
+  }
+  .footer-icons ul {
+    margin-left: 0px;
+  }
+  .circle {
+     width: 50px;
+      height: 47px;
+      text-align: center;
+      padding: 6px;
+  }
 /*================================================*/
 
 
 /*===================tablet css=============================*/
 @media screen and (min-width: 412px)
 {
-  .vd {
-     display: block;
-     height: auto;
-    width: 100%;
-        }
-
-  header{
-    height: auto;
-    width:100%;
-  }
-
-  header img {
-    width: 100px;
-    height: 100px;
-    margin-left: 19px;
-    margin-top: 13px;
-}
-header h1 {
+  header h1 {
     position: absolute;
     top: 29px;
     left: 127px;
     font-size: 30px;
-}
-header h2 {
+  }
+  header h2 {
     position: absolute;
     top: 67px;
     left: 130px;
-    font-size: 13px;
-}
-h3{
-  font-size: 21px;
-}
-.hside {
-    width: 100%;
-    height: auto;
-    background: transparent;
-}
-.indicator{
-      background-color: #EAECEE;
-}
-#zen-intro {
-    width: 100%;
-}
-.first-para {
-    padding-left: 41px;
-    padding-right: 30px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-     height:auto;
-}
-.second-para {
-    padding-left: 36px;
-    padding-right: 26px;
-    padding-top: 10px;
-    padding-bottom: 26px;
-     height:auto;
-    margin-right: 0px;
-}
-.third-para {
-    padding-left: 40px;
-    padding-top: 11px;
-    padding-bottom: 20px;
-     height:auto;
-    width: 100%;
-}
-
-.sidebar {
+    font-size: 19px;
+  }
+  .sidebar {
      height: auto;
      margin-top: 0px;
-}
-aside {
+  }
+  aside {
     float: right;
     width: 100%;
-     position:initial;
+    position:initial;
     top: 0px;
     bottom: 300px;
     right: 0px;
-}
-.design-selection ul {
-    margin-top: 19px;
-    text-align: left;
-    padding-left: 90px;
-}
-.zen-resources ul {
-    margin-top: 0px;
-    padding-left: 86px;
-    padding-bottom: 15px;
-}
-.footer-text {
-  height: auto;
-}
-.footer-text p {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    font-size: 23px;
-    line-height: 40px;
-     word-spacing:normal;
-}
-.footer-icons ul{
-  margin-left: 0px;
-}
-.footer-icons ul li {
-     padding-left: 0px;
-     padding-right:0px;
-}
+  }
+  .design-selection ul li a{
+    font-size:25px;
+  }
+  .zen-resources ul li a {
+    font-size:25px;
+  }
+  circle {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    padding: 13px;
+  }
+  .footer-icons ul li {
+    padding-left: 16px;
+    padding-right: 15px;
+    margin-left: -2px;
+  }
 }
 
 /*============================================================*/
@@ -603,56 +499,55 @@ aside {
 /*===============================tablet landscape===================================*/
 @media screen and (min-width: 732px)
 {
-header img {
+  header img {
     margin-left: 26px;
-            }
-header h1 {
+  }
+  header h1 {
     left: 136px;
     font-size: 45px;
-}
-header h2 {
+  }
+  header h2 {
     left: 144px;
-}
-.first-para {
+  }
+  .first-para {
     padding-left: 29px;
     padding-top: 40px;
-}
-.second-para {
+  }
+  .second-para {
     padding-left: 29px;
     padding-right: 25px;
     padding-top: 40px;
     margin-right: 0px;
-}
-.third-para {
+  }
+  .third-para {
     padding-left: 24px;
     padding-top: 40px;
-}
-.design-selection ul {
+  }
+  .design-selection ul {
     margin-top: 28px;
     text-align: left;
     padding-left: 21px;
-}
-.design-selection ul li {
+  }
+  .design-selection ul li {
     margin-top: 56px;
-}
-.zen-resources ul {
+  }
+  .zen-resources ul {
     margin-top: 0px;
     padding-left: 25px;
-}
-.zen-resources ul li {
+  }
+  .zen-resources ul li {
     margin-top: 74px;
-}
-.footer-icons ul li {
-    padding-left: 7px;
-    padding-right: 83px;
-}
+  }
+  .footer-icons ul li {
+    padding-left: 21px;
+    padding-right: 67px;
+    margin-left:0px;
+  }
 }
 
 /*====================================================================================*/
 @media screen and (min-width: 1024px)
 {
-
-
   body{
     position: relative;
   }
@@ -672,25 +567,17 @@ header h2 {
     border:1px solid #D4EFDF;
     background-color: #D4EFDF;
   }
-  /*===========#D4EFDF=================*/
-
   /*header.css*/
   .vd {
     background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
     background-size: 100% 100%;
     display: flex;
-    /*background-repeat:no-repeat;*/
     height:200px;
     width:100%;
     margin:0px;
   }
   header { width:75%;
     height:200px;
-    /*background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 100% 100%;
-    /*background-repeat:no-repeat;
-    height:200px;
-    margin:0px;*/
   }
   header img {
     width: 100px;
@@ -739,31 +626,19 @@ header h2 {
     background-color: #EAECEE  ;
     text-align: center;
     height:50px;
-    /*padding-top: 5%;*/
+    padding:0px;
+    padding-top: 15px;
     align-items: center;
     justify-content:center;
     color:#515A5A;
   }
-
-
-  /*.indicator{
-    margin-left: 91%;
-    color:#EAECEE  ;
-    position: relative;
-    top:-90px;
-
-  }*/
   .indicator i{
     background-color: #EAECEE  ;
     color:#515A5A;
     opacity:0.3;
   }
   /*============================
-
   /*content.css*/
-  /*.content-wrapper{
-    position: relative;
-  }*/
   #zen-intro {
     background: #888;
     float:left;
@@ -820,7 +695,7 @@ header h2 {
     padding-top: 40px;
     padding-bottom: 60px;
     /*height:600px;*/
-    width: 100%
+    /*width: 100%*/
   }
   .third-para a{
     font-family: 'Source Code Pro', monospace;
@@ -851,13 +726,8 @@ header h2 {
   }
   .sidebar {
     background: #95A5A6 ;
-    /*height: 2150px;*/
     opacity: 0.4;
     margin-top:200px;
-    /*position: absolute;
-    top:0px;
-    bottom: 0px;
-    right:0px;*/
   }
   .design-selection ul  {
     display: flex;
@@ -865,13 +735,9 @@ header h2 {
     margin-top:100px;
     text-align: left;
     padding-left: 60px;
-    /*align-items: center;*/
-    /*justify-content: center;*/
   }
   .design-selection ul  li{
     margin-top: 18px;
-
-    /*padding-bottom: 4px;*/
   }
   .design-selection ul  li a {
     color: #003300;
@@ -890,7 +756,7 @@ header h2 {
   .zen-resources ul{
     display: flex;
     flex-direction: column;
-    margin-top:120px;
+    margin-top:310px;
     text-align: left;
     padding-left: 60px;
   }
@@ -904,7 +770,6 @@ header h2 {
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
     font-size: 16px;
-
   }
 
   /*============================*/
@@ -927,8 +792,7 @@ header h2 {
     word-spacing: 6px;
   }
   .footer-text a{
-    color: #fff;
-    /*font-weight: 40px;*/
+  color: #fff;
   font-style: normal;
   text-decoration: none;
   }
@@ -955,8 +819,8 @@ header h2 {
   .circle {
     width: 60px;
     height: 60px;
-  padding:13px;
-  border: 1px solid #BDC3C7  ;
+    padding:13px;
+    border: 1px solid #BDC3C7  ;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
@@ -965,5 +829,14 @@ header h2 {
   }
   .fa-ul i{
     color:white;
+  }
+}
+
+@media screen and (min-width: 1366px)
+{
+   .zen-resources ul{
+
+    margin-top:170px;
+
   }
 }
