@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+ <title>
+   Quiz
+ </title>
+</head>
+<body class="full">
+
+<h1>QUIZ</h1>
+<div id="content">
+ <h3 >Rules of quiz:</h3>
+ <ul>
+   <li>There are total five questions in this quiz.</li>
+   <li>All the questions are mandatory.</li>
+   <li>Each question is worth two marks.</li>
+   <li>Scores will be shown after you submit the quiz.</li>
+ </ul>
+ <button id="start" onclick="startquiz(this.id)" onmouseover="mOver(this)" onmouseout="mOut(this)" >
+ START
+ </button>
+</div>
+<div id="types">
+ <button id="html" value="html" onclick="go_html(this.value)">HTML</button>
+ <button id="css" value="css" onclick="go_css(this.value)">CSS</button>
+ <button id="php" value="php" onclick="go_php(this.value)">PHP</button>
+ <button id="js" value="js" onclick="go_js(this.value)">Javascript</button>
+</div>
+<div id="started">
+ <div id="laugh">!Wrong Answer</div>
+ <p id="que"></p>
+ <div class="button">
+   <button class="opt" id="1" onclick="get_id(this.id)"><span id="ch1"></span></button>
+   <button class="opt" id="2" onclick="get_id(this.id)"><span id="ch2"></span></button>
+   <button class="opt" id="3" onclick="get_id(this.id)"><span id="ch3"></span></button>
+   <button class="opt" id="4" onclick="get_id(this.id)"><span id="ch4"></span></button>
+ </div>
+ <button id="next" onclick="nextques()">
+ Next
+ </button>
+</div>
+<div id="last">
+ <div id="scores"></div>
+ <button id="again" onclick="location.reload()">
+   Play Again
+ </button>
+</div>
+<script src="mainscript.js"></script>
+</body>
+</html>
