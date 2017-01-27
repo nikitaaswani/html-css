@@ -1,0 +1,111 @@
+body {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  display: block;
+}
+
+.bg-image1, .bg-image2, .bg-image3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallex-demo p, .content-scroll p {
+  font: 400 15px/1.8 "Lato", sans-serif;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.bg-image1 {
+  min-height: 100vh;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image1.jpg");
+}
+
+.bg-image2 {
+  min-height: 400px;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image2.jpg");
+}
+
+.bg-image3 {
+  min-height: 400px;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image3.jpg");
+}
+
+.bg-image1 .caption, .bg-image2 .caption, .bg-image3 .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.bg-image2 .caption .border, .bg-image3 .caption .border {
+  background-color: transparent;
+  font-size: 25px;
+  color: #f7f7f7;
+  padding: 18px;
+  letter-spacing: 10px;
+}
+
+.bg-image1 .caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.parallex-demo {
+  color: #777;
+  background-color: white;
+  padding: 50px 80px;
+  text-align: justify;
+}
+.parallex-demo h3 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #111;
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  font: 20px "Lato", sans-serif;
+}
+
+.content-scroll {
+  color: #ddd;
+  background-color: #282E34;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .bg-image1 .caption .border, .bg-image2 .caption .border, .bg-image3 .caption .border {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .parallex-demo p, .content-scroll p {
+    font: 400 25px/1.8 "Lato", sans-serif;
+  }
+}
+
+@media (min-width: 600px) {
+  .bg-image1 .caption .border, .bg-image2 .caption .border, .bg-image3 .caption .border {
+    font-size: 44px;
+  }
+}

@@ -1,0 +1,120 @@
+@import "breakpoint";
+body{
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    display: block;
+}
+
+%bgimg {
+  position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%para {
+  font: 400 15px/1.8 "Lato", sans-serif;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.bg-image1{
+  @extend %bgimg;
+  min-height: 100vh;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image1.jpg");
+}
+.bg-image2{
+  @extend %bgimg;
+  min-height: 400px;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image2.jpg");
+}
+.bg-image3{
+  @extend %bgimg;
+  min-height: 400px;
+  background-image: url("/Users/nikita/Desktop/html:css/parallex/images/bg_image3.jpg");
+}
+#{selector-nest(".bg-image1,.bg-image2,.bg-image3",".caption")}
+{
+  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+#{selector-nest(".bg-image2,.bg-image3",".caption",".border")}
+{
+  background-color: transparent;
+  font-size: 25px;
+  color: #f7f7f7;
+  padding: 18px;
+  letter-spacing: 10px;
+}
+#{selector-nest(".bg-image1",".caption",".border")}
+{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.parallex-demo{
+  color: #777;
+  background-color: white;
+  padding: 50px 80px;
+  text-align: justify;
+
+  h3{
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #111;
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font: 20px "Lato", sans-serif;
+  }
+
+  p{
+    @extend %para;
+  }
+}
+.content-scroll{
+  color: #ddd;
+  background-color: #282E34;
+  padding: 50px 80px;
+  text-align: justify;
+  p{
+    @extend %para;
+  }
+}
+
+#{selector-nest(".bg-image1,.bg-image2,.bg-image3",".caption",".border")}
+{
+  @include breakpoint(320px 600px){
+    font-size:70px;
+  }
+}
+#{selector-nest(".parallex-demo,.content-scroll","p")}
+{
+  @include breakpoint(320px 600px){
+    font: 400 25px/1.8 "Lato", sans-serif;
+  }
+}
+
+#{selector-nest(".bg-image1,.bg-image2,.bg-image3",".caption",".border")}
+{
+  @include breakpoint(600px){
+    font-size:44px;
+  }
+}

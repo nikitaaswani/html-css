@@ -1,0 +1,21 @@
+{
+  "name": "parallex",
+  "version": "1.0.0",
+  "description": "parallex using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "node-sass": "^4.3.0",
+    "normalize-compass": "^3.0.1",
+    "susy": "^2.2.12"
+  }
+}
